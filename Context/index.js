@@ -89,7 +89,7 @@ export const StateContextProvider = ({ children }) => {
       const tokenPrice = await TOKEN_SALE_CONTRACT.tokenPrice();
       const tokenSold = await TOKEN_SALE_CONTRACT.tokensSold();
       const tokenSaleBalance = await TOKEN_CONTRACT.balanceOf(
-        "0xe7f1725e7734ce288f8367e1bb143e90bb3f0512"
+        "0xe7f1725E7734CE288F8367e1Bb143E90bb3F0512"
       );
 
       const tokenSale = {
@@ -130,7 +130,7 @@ export const StateContextProvider = ({ children }) => {
   const transferNativeToken = async () => {
     try {
       const TOKEN_SALE_ADDRESS = "0xe7f1725E7734CE288F8367e1Bb143E90bb3F0512";
-      const TOKEN_AMOUNT = 500;
+      const TOKEN_AMOUNT = 5000;
       const tokens = TOKEN_AMOUNT.toString();
       const transferAmount = ethers.utils.parseEther(tokens);
 

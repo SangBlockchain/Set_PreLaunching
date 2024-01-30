@@ -89,7 +89,7 @@ const Header = ({ address, connectWallet }) => {
                   <a class="btn btn-default btn-radius nav_item ">
                     <small className="new-color">
                       {" "}
-                      {address.slice(0, 15)}...
+                      {address.slice(0, 2)}...{address.slice(-4)}
                     </small>
                   </a>
                 ) : (

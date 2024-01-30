@@ -30,7 +30,7 @@ const Service = () => {
     {
       title: "Planning      ",
       discription:
-        "A cutting edge issue in traditional estate planning is Cryptocash. Cryptocash is a digital or virtual currency that uses cryptography for security      ",
+        "A cutting edge issue in traditional estate planning is Coinlize. Coinlize is a digital or virtual currency that uses cryptography for security      ",
     },
   ];
   return (

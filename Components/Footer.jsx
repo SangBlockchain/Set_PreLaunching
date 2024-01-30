@@ -2,7 +2,7 @@ import React from "react";
 import { BsArrowRight } from "react-icons/bs";
 const Footer = () => {
   const footerList = [
-    "Cryptocash ICO",
+    "Coinlize ICO",
     "How It Works",
     "Tokens",
     "FAQ",
@@ -34,7 +34,7 @@ const Footer = () => {
                   data-animation="fadeInUp"
                   data-animation-delay="0.4s"
                 >
-                  Cryptocash stands firmly in support of financial freedom and
+                  Coinlize stands firmly in support of financial freedom and
                   the liberty that Bitcoin provides globally for anyone to
                   voluntarily participate in a permissionless and decentralized
                   network.

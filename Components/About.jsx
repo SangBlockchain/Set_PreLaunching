@@ -23,15 +23,15 @@ const About = () => {
                 data-animation="fadeInUp"
                 data-animation-delay="0.2s"
               >
-                About The Cryptocash
+                About The Coinlize
               </h4>
               <p
                 class="animation"
                 data-animation="fadeInUp"
                 data-animation-delay="0.4s"
               >
-                Cryptocash is one of the most transformative technologies since
-                the invention of the Internet. Cryptocash stands firmly in
+                Coinlize is one of the most transformative technologies since
+                the invention of the Internet. Coinlize stands firmly in
                 support of financial freedom and the liberty that Bitcoin
                 provides globally for anyone to voluntarily participate in a
                 permissionless and decentralized network.

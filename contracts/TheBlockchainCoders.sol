@@ -120,4 +120,3 @@ contract TheBlockchainCoders {
         return holderToken;
     }
 }
-

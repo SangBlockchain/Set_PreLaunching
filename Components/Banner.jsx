@@ -23,8 +23,7 @@ const Banner = ({ transferNativeToken }) => {
                 data-animation="fadeInUp"
                 data-animation-delay="1.1s"
               >
-                <strong>Bitcoin</strong> is peer to peer innovative
-                <strong>network</strong>
+                <strong>Coinlize</strong> is peer to peer Payment Network
               </h1>
               <h5
                 class="animation presale_txt text-white"

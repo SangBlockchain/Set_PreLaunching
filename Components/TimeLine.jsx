@@ -68,7 +68,7 @@ const TimeLine = () => {
                       data-animation="fadeInUp"
                       data-animation-delay="0.4s"
                     >
-                      Exchange Cryptocash to Bitcoin
+                      Exchange Coinlize to Bitcoin
                     </p>
                   </div>
                 </div>
@@ -89,7 +89,7 @@ const TimeLine = () => {
                       data-animation="fadeInUp"
                       data-animation-delay="0.4s"
                     >
-                      BTCC mode of payment in Cryptocash
+                      BTCC mode of payment in Coinlize
                     </p>
                   </div>
                 </div>
@@ -110,7 +110,7 @@ const TimeLine = () => {
                       data-animation="fadeInUp"
                       data-animation-delay="0.4s"
                     >
-                      Send-Receive coin Cryptocash & mobile
+                      Send-Receive coin Coinlize & mobile
                     </p>
                   </div>
                 </div>

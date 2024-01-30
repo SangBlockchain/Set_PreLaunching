@@ -1,6 +1,6 @@
 /*=========================================================
 Author       : Bestwebcreator.
-Template Name: Cryptocash – ICO, Cryptocurrency Website & ICO Landing Page HTML + Dashboard Template
+Template Name: Coinlize – ICO, Cryptocurrency Website & ICO Landing Page HTML + Dashboard Template
 Version      : 1.7
 ==============================================================*/
 
@@ -872,9 +872,11 @@ button:focus {
         -moz-transform: scale(0.5);
         transform: scale(0.5);
     }
+
     50% {
         opacity: 1;
     }
+
     100% {
         opacity: 0;
         -webkit-transform: scale(1.2);
@@ -1176,6 +1178,7 @@ button.btn-white {
         -webkit-transform: translateY(0px);
         transform: translateY(0px);
     }
+
     to {
         -webkit-transform: translateY(-20px);
         transform: translateY(-20px);
@@ -1187,6 +1190,7 @@ button.btn-white {
         -webkit-transform: translateY(0px);
         transform: translateY(0px);
     }
+
     to {
         -webkit-transform: translateY(-20px);
         transform: translateY(-20px);
@@ -1984,9 +1988,11 @@ header a:hover,
     0% {
         transform: translateX(0) translateZ(0)
     }
+
     50% {
         transform: translateX(-25%) translateZ(0)
     }
+
     100% {
         transform: translateX(-50%) translateZ(0)
     }
@@ -1996,9 +2002,11 @@ header a:hover,
     0% {
         transform: translateX(0) translateZ(0) scaleY(1)
     }
+
     50% {
         transform: translateX(25%) translateZ(0) scaleY(0.55)
     }
+
     100% {
         transform: translateX(50%) translateZ(0) scaleY(1)
     }
@@ -2240,11 +2248,13 @@ header a:hover,
         transform: scale(.01);
         opacity: 1;
     }
+
     50% {
         -webkit-transform: scale(.5);
         transform: scale(.5);
         opacity: 1;
     }
+
     100% {
         -webkit-transform: scale(1);
         transform: scale(1);
@@ -2258,11 +2268,13 @@ header a:hover,
         transform: scale(.01);
         opacity: 1;
     }
+
     50% {
         -moz-transform: scale(.5);
         transform: scale(.5);
         opacity: 1;
     }
+
     100% {
         -moz-transform: scale(1);
         transform: scale(1);
@@ -2276,11 +2288,13 @@ header a:hover,
         transform: scale(.01);
         opacity: 1;
     }
+
     50% {
         -o-transform: scale(.5);
         transform: scale(.5);
         opacity: 1;
     }
+
     100% {
         -o-transform: scale(1);
         transform: scale(1);
@@ -2294,11 +2308,13 @@ header a:hover,
         transform: scale(0.1);
         opacity: 1;
     }
+
     50% {
         transform: scale(.5);
         transform: scale(.5);
         opacity: 1;
     }
+
     100% {
         transform: scale(1);
         transform: scale(1);
@@ -3437,7 +3453,7 @@ header a:hover,
     /* ie10+ */
     background: radial-gradient(ellipse at center, rgba(68, 109, 188, 1) 0%, rgba(0, 0, 255, 0) 70%);
     /* w3c */
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#446dbc', endColorstr='#0000ff', GradientType=1);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#446dbc', endColorstr='#0000ff', GradientType=1);
     /* ie6-9 */
     border-radius: 100%;
     height: 600px;
@@ -3465,7 +3481,7 @@ header a:hover,
     /* ie10+ */
     background: radial-gradient(ellipse at center, rgba(68, 109, 188, 1) 0%, rgba(0, 0, 255, 0) 70%);
     /* w3c */
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#446dbc', endColorstr='#0000ff', GradientType=1);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#446dbc', endColorstr='#0000ff', GradientType=1);
     /* ie6-9 */
     border-radius: 100%;
     height: 500px;
@@ -6619,9 +6635,11 @@ button.btn-white:hover {
         -webkit-transform: scale(0.8);
         transform: scale(0.8);
     }
+
     50% {
         opacity: 1;
     }
+
     100% {
         opacity: 0;
         -moz-transform: scale(1.2);

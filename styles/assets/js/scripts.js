@@ -1,16 +1,16 @@
 /*===================================
 Author       : Bestwebcreator.
-Template Name: Cryptocash – ICO, Cryptocurrency Website & ICO Landing Page HTML + Dashboard Template
+Template Name: Coinlize – ICO, Cryptocurrency Website & ICO Landing Page HTML + Dashboard Template
 Version      : 1.6
 ===================================*/
 
-(function($) {
+(function ($) {
     'use strict';
 
     /*===================================*
     01. LOADING JS
     /*===================================*/
-    $(window).on('load', function() {
+    $(window).on('load', function () {
         var preLoder = $(".loader-wrapper");
         preLoder.delay(700).fadeOut(500);
         $('body').addClass('loaded');
@@ -20,7 +20,7 @@ Version      : 1.6
     02. SMOOTH SCROLLING JS
     *===================================*/
     // Select all links with hashes
-    $('a.page-scroll').on('click', function(event) {
+    $('a.page-scroll').on('click', function (event) {
         // On-page links
         if (location.pathname.replace(/^\//, '') === this.pathname.replace(/^\//, '') && location.hostname === this.hostname) {
             // Figure out element to scroll to
@@ -43,7 +43,7 @@ Version      : 1.6
     03. MENU JS
     *===================================*/
     //Main navigation scroll spy for shadow
-    $(window).on('scroll', function() {
+    $(window).on('scroll', function () {
         var scroll = $(window).scrollTop();
 
         if (scroll >= 80) {
@@ -55,8 +55,8 @@ Version      : 1.6
     });
 
     //Show Hide dropdown-menu Main navigation 
-    $(document).ready(function() {
-        $('.dropdown-menu a.dropdown-toggler').on('click', function(e) {
+    $(document).ready(function () {
+        $('.dropdown-menu a.dropdown-toggler').on('click', function (e) {
             var $el = $(this);
             var $parent = $(this).offsetParent(".dropdown-menu");
             if (!$(this).next().hasClass('show')) {
@@ -67,7 +67,7 @@ Version      : 1.6
 
             $(this).parent("li").toggleClass('show');
 
-            $(this).parents('li.nav-item.dropdown.show').on('hidden.bs.dropdown', function(e) {
+            $(this).parents('li.nav-item.dropdown.show').on('hidden.bs.dropdown', function (e) {
                 $('.dropdown-menu .show').removeClass("show");
             });
 
@@ -80,11 +80,11 @@ Version      : 1.6
     var navBar = $(".header_wrap");
     var navbarLinks = navBar.find(".navbar-collapse ul li a.nav_item");
 
-    $.each(navbarLinks, function(i, val) {
+    $.each(navbarLinks, function (i, val) {
 
         var navbarLink = $(this);
 
-        navbarLink.on('click', function() {
+        navbarLink.on('click', function () {
             navBar.find(".navbar-collapse").collapse('hide');
             $("header").removeClass("active");
         });
@@ -92,14 +92,14 @@ Version      : 1.6
     });
 
     //Main navigation Active Class Add Remove
-    $('.navbar-toggler').on('click', function() {
+    $('.navbar-toggler').on('click', function () {
         $("header").toggleClass("active");
     });
-    $(document).on("ready", function() {
+    $(document).on("ready", function () {
         if ($(window).width() > 991) {
             $("header").removeClass("active");
         }
-        $(window).on("resize", function() {
+        $(window).on("resize", function () {
             if ($(window).width() > 991) {
                 $("header").removeClass("active");
             }
@@ -107,7 +107,7 @@ Version      : 1.6
     })
 
     //Language Select Dropdown
-    $(document).ready(function() {
+    $(document).ready(function () {
         $("#lng_select,#doc_select").msDropdown();
     })
 
@@ -233,8 +233,8 @@ Version      : 1.6
     }
 
     /*===================================*
-	05. ROAD MAP SLIDER JS
-	*===================================*/
+    05. ROAD MAP SLIDER JS
+    *===================================*/
     $('.roadmap').owlCarousel({
         loop: false,
         margin: 30,
@@ -365,9 +365,9 @@ Version      : 1.6
     /*===================================*
      08.COUNTDOWN JS
     *===================================*/
-    $('.tk_countdown_time').each(function() {
+    $('.tk_countdown_time').each(function () {
         var endTime = $(this).data('time');
-        $(this).countdown(endTime, function(tm) {
+        $(this).countdown(endTime, function (tm) {
             $(this).html(tm.strftime('<span class="counter_box"><span class="tk_counter days">%D </span><span class="tk_text">Days</span></span><span class="counter_box"><span class="tk_counter hours">%H</span><span class="tk_text">Hours</span></span><span class="counter_box"><span class="tk_counter minutes">%M</span><span class="tk_text">Minutes</span></span><span class="counter_box"><span class="tk_counter seconds">%S</span><span class="tk_text">Seconds</span></span>'));
         });
     });
@@ -382,7 +382,7 @@ Version      : 1.6
     /*===================================*
     10. CONTACT FORM JS
     *===================================*/
-    $("#submitButton").on("click", function(event) {
+    $("#submitButton").on("click", function (event) {
         event.preventDefault();
         var mydata = $("form").serialize();
         $.ajax({
@@ -390,7 +390,7 @@ Version      : 1.6
             dataType: "json",
             url: "contact.php",
             data: mydata,
-            success: function(data) {
+            success: function (data) {
                 if (data.type === "error") {
                     $("#alert-msg").removeClass("alert-msg-success");
                     $("#alert-msg").addClass("alert-msg-failure");
@@ -406,7 +406,7 @@ Version      : 1.6
                 $("#alert-msg").html(data.msg);
                 $("#alert-msg").show();
             },
-            error: function(xhr, textStatus) {
+            error: function (xhr, textStatus) {
                 alert(textStatus);
             }
         });
@@ -415,7 +415,7 @@ Version      : 1.6
     /*===================================*
     11. SCROLLUP JS
     *===================================*/
-    $(window).scroll(function() {
+    $(window).scroll(function () {
         if ($(this).scrollTop() > 150) {
             $('.scrollup').fadeIn();
         } else {
@@ -423,7 +423,7 @@ Version      : 1.6
         }
     });
 
-    $(".scrollup").on('click', function(e) {
+    $(".scrollup").on('click', function (e) {
         e.preventDefault();
         $('html, body').animate({
             scrollTop: 0
@@ -443,10 +443,10 @@ Version      : 1.6
     /*===================================*
     13. ANIMATION JS
     *===================================*/
-    $(function() {
+    $(function () {
 
         function ckScrollInit(items, trigger) {
-            items.each(function() {
+            items.each(function () {
                 var ckElement = $(this),
                     AnimationClass = ckElement.attr('data-animation'),
                     AnimationDelay = ckElement.attr('data-animation-delay');
@@ -460,7 +460,7 @@ Version      : 1.6
 
                 var ckTrigger = (trigger) ? trigger : ckElement;
 
-                ckTrigger.waypoint(function() {
+                ckTrigger.waypoint(function () {
                     ckElement.addClass("animated").css("opacity", "1");
                     ckElement.addClass('animated').addClass(AnimationClass);
                 }, {
@@ -478,7 +478,7 @@ Version      : 1.6
     /*===================================*
     14. START COUNTUP JS
     *===================================*/
-    jQuery(document).ready(function($) {
+    jQuery(document).ready(function ($) {
         jQuery('.counter').counterUp({
             delay: 10,
             time: 1000
@@ -488,20 +488,20 @@ Version      : 1.6
     /*===================================*
     15. COLOR SWITCHHER JS
     *===================================*/
-    $(".color-switch").on("click", "button", function() {
+    $(".color-switch").on("click", "button", function () {
 
         $(this).addClass("active").siblings().removeClass("active");
         $("#layoutstyle").attr("href", "assets/color/" + $(this).val() + ".css");
 
     });
 
-    $(".icon").on("click", function() {
+    $(".icon").on("click", function () {
         $(".color-switch").toggleClass("switch-active");
         $(this).toggleClass("switch-active");
     });
 
-    $(function() {
-        $('#doc_select').change(function() {
+    $(function () {
+        $('#doc_select').change(function () {
             $('.document_tab .tab-pane').removeClass('show active');
             $('#' + $(this).val()).addClass('show active');
         });
@@ -653,8 +653,8 @@ Version      : 1.6
     }
 
     /*Demo js*/
-    $(window).on("load", function() {
-        document.onkeydown = function(e) {
+    $(window).on("load", function () {
+        document.onkeydown = function (e) {
             if (e.keyCode == 123) {
                 return false;
             }
@@ -673,15 +673,15 @@ Version      : 1.6
             }
         }
 
-        $("html").on("contextmenu", function() {
+        $("html").on("contextmenu", function () {
             return false;
         });
     });
 
 })(jQuery);
 
-$(document).ready(function() {
-    $(window).on("load", function() {
-        $('body').prepend('<a href="https://www.designnominees.com/themes/cryptocash-ico-cryptocurrency-ico-landing-page-html-template" title="Design Nominees" style="width:70px;height:130px;position:fixed;top:0;right:0px;z-index:99999;text-indent:-9999px;background: url(https://www.designnominees.com/ribbons/designnominees-ribbon-blue-right.png) no-repeat;" target="_blank">Design Nominees</a> ');
+$(document).ready(function () {
+    $(window).on("load", function () {
+        $('body').prepend('<a href="https://www.designnominees.com/themes/coinlize-ico-cryptocurrency-ico-landing-page-html-template" title="Design Nominees" style="width:70px;height:130px;position:fixed;top:0;right:0px;z-index:99999;text-indent:-9999px;background: url(https://www.designnominees.com/ribbons/designnominees-ribbon-blue-right.png) no-repeat;" target="_blank">Design Nominees</a> ');
     });
 });
