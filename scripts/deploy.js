@@ -5,24 +5,24 @@ const tokens = (nToken) => {
 };
 
 async function main() {
-  //TheBlockchainCoders
+  //Total Supply TokenSLV
   const _initialSupply = tokens(5000000);
 
-  const TheBlockchainCoders = await hre.ethers.getContractFactory(
-    "TheBlockchainCoders"
+  const TokenSLV = await hre.ethers.getContractFactory(
+    "TokenSLV"
   );
-  const theBlockchainCoders = await TheBlockchainCoders.deploy(_initialSupply);
+  const tokenSLV = await TokenSLV.deploy(_initialSupply);
 
-  await theBlockchainCoders.deployed();
-  console.log(` TheBlockchainCoders: ${theBlockchainCoders.address}`);
+  await tokenSLV.deployed();
+  console.log(` TokenSLV: ${tokenSLV.address}`);
 
-  //TOTEN SALE
 
+  //TOKEN SALE
   const _tokenPrice = tokens(1);
 
   const TokenSale = await hre.ethers.getContractFactory("TokenSale");
   const tokenSale = await TokenSale.deploy(
-    theBlockchainCoders.address,
+    tokenSLV.address,
     _tokenPrice
   );
 

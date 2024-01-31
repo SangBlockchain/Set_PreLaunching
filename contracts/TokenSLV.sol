@@ -1,10 +1,10 @@
 // SPDX-License-Identifier: MIT
 pragma solidity ^0.8.0;
 
-contract TheBlockchainCoders {
-    string public name = "The Blockchain Coders";
-    string public symbol = "TBC";
-    string public standard = "@theblockchaincoders v.0.1";
+contract TokenSLV {
+    string public name = "Sang LV";
+    string public symbol = "SLV";
+    string public standard = "SangLV v.0.1";
     uint256 public totalSupply;
     address public ownerOfContract;
     uint256 public _userId;

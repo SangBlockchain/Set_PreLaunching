@@ -54,7 +54,7 @@ const TokenSale = ({ buyToken, tokenSale }) => {
                 data-animation="fadeInUp"
                 data-animation-delay="0.4s"
               >
-                July 23, 2023 (Mon 10:00 AM)
+                Feb 5, 2024 (Mon 10:00 AM)
               </p>
             </div>
             <div class="pr_box">
@@ -70,7 +70,7 @@ const TokenSale = ({ buyToken, tokenSale }) => {
                 data-animation="fadeInUp"
                 data-animation-delay="0.8s"
               >
-                Dec 18, 2024 (Mon 12:00 PM)
+                Mar 5, 2024 (Tue 10:00 AM)
               </p>
             </div>
             <div class="pr_box">
@@ -86,7 +86,7 @@ const TokenSale = ({ buyToken, tokenSale }) => {
                 data-animation="fadeInUp"
                 data-animation-delay="1.2s"
               >
-                1 ETH = 1 TBC, 1 BCC = 1 BCC
+                1 ETH = 1 SLV
               </p>
             </div>
           </div>
@@ -107,7 +107,7 @@ const TokenSale = ({ buyToken, tokenSale }) => {
                       <input
                         type="number"
                         required="required"
-                        placeholder="1"
+                        placeholder="0"
                         id="first-name"
                         min={1}
                         class="form-control"
@@ -137,10 +137,10 @@ const TokenSale = ({ buyToken, tokenSale }) => {
                     </div>
 
                     <span class="progress_label bg-white inline_style_1">
-                      <strong> {tokenSale?.tokenSold} TBC </strong>
+                      <strong> {tokenSale?.tokenSold} SLV </strong>
                     </span>
                     <span class="progress_label bg-white inline_style_2">
-                      <strong> {tokenSale?.tokenSaleBalance} TBC </strong>
+                      <strong> {tokenSale?.tokenSaleBalance} SLV </strong>
                     </span>
                     <span class="progress_min_val">Sale Raised</span>
                     <span class="progress_max_val">Soft-caps</span>
@@ -217,7 +217,7 @@ const TokenSale = ({ buyToken, tokenSale }) => {
                 data-animation="fadeInUp"
                 data-animation-delay="0.8s"
               >
-                {tokenSale?.tokenSold} TBC {showPercentage.slice(0, 4)}%
+                {tokenSale?.tokenSold} SLV {showPercentage.slice(0, 4)}%
               </p>
             </div>
             <div class="pr_box">
@@ -233,7 +233,7 @@ const TokenSale = ({ buyToken, tokenSale }) => {
                 data-animation="fadeInUp"
                 data-animation-delay="1.2s"
               >
-                BTC, Eth, Ltc, XRP
+                Eth
               </p>
             </div>
           </div>
